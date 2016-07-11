@@ -7,8 +7,9 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-
-<%= yield %>
+<%= link_to "Home", root_path %>
+<%= link_to "New Post", new_post_path %>
+<%= yield %> #render all the app various views inside this application template
 
 </body>
 </html>

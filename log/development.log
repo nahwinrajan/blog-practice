@@ -420,3 +420,781 @@ Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb
 
 
 Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 23:33:50 +0700
+
+
+Started GET "/posts/new" for ::1 at 2016-07-11 23:39:01 +0700
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (4.0ms)
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms)
+
+ActionView::Template::Error (First argument in form cannot contain nil or be empty):
+    1: <h1>New Post</h1>
+    2: 
+    3: <%= form_for @post do |f| %>
+    4:   <%= f.label :title %><br>
+    5:   <%= f.text_field :title %><br>
+    6:   <br>
+  app/views/posts/new.html.erb:3:in `_app_views_posts_new_html_erb___2547377430395564521_70102526790860'
+
+
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (5.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.5ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.4ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (78.2ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (48.5ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (107.0ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-07-11 23:40:22 +0700
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 35ms (Views: 29.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 23:40:22 +0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 23:40:22 +0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 23:40:22 +0700
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 23:40:22 +0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-11 23:40:22 +0700
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 23:40:22 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 23:40:22 +0700
+
+
+Started POST "/posts" for ::1 at 2016-07-11 23:41:04 +0700
+
+AbstractController::ActionNotFound (The action 'create' could not be found for PostsController):
+  actionpack (4.2.6) lib/abstract_controller/base.rb:132:in `process'
+  actionview (4.2.6) lib/action_view/rendering.rb:30:in `process'
+  actionpack (4.2.6) lib/action_controller/metal.rb:196:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal/rack_delegation.rb:13:in `dispatch'
+  actionpack (4.2.6) lib/action_controller/metal.rb:237:in `block in action'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:74:in `dispatch'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:43:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:43:in `block in serve'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `each'
+  actionpack (4.2.6) lib/action_dispatch/journey/router.rb:30:in `serve'
+  actionpack (4.2.6) lib/action_dispatch/routing/route_set.rb:817:in `call'
+  rack (1.6.4) lib/rack/etag.rb:24:in `call'
+  rack (1.6.4) lib/rack/conditionalget.rb:38:in `call'
+  rack (1.6.4) lib/rack/head.rb:13:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/params_parser.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/flash.rb:260:in `call'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:225:in `context'
+  rack (1.6.4) lib/rack/session/abstract/id.rb:220:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/cookies.rb:560:in `call'
+  activerecord (4.2.6) lib/active_record/query_cache.rb:36:in `call'
+  activerecord (4.2.6) lib/active_record/connection_adapters/abstract/connection_pool.rb:653:in `call'
+  activerecord (4.2.6) lib/active_record/migration.rb:377:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:29:in `block in call'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:88:in `__run_callbacks__'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:778:in `_run_call_callbacks'
+  activesupport (4.2.6) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (4.2.6) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/reloader.rb:73:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/remote_ip.rb:78:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:17:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/unknown_action.html.erb within rescues/layout (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.8ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (100.0ms)
+
+
+Started POST "/posts" for ::1 at 2016-07-11 23:47:04 +0700
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6XQFfl8E1B3ILIiWxIucoooJEk5zSghibTEDxP3QJsnpVd86QaLvZEVW4o2rEZvfdBZWN5Xlb0SuIciWjho2Tg==", "post"=>{"title"=>"Hello World!", "body"=>"on this day the first blog post of amazing blog is posted."}, "commit"=>"Create Post"}
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+NameError (undefined local variable or method `post_param' for #<PostsController:0x007f8407709ff8>
+Did you mean?  post_params
+               post_path
+               to_param):
+  app/controllers/posts_controller.rb:10:in `create'
+
+
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (3.1ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.8ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (57.2ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.6ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (106.2ms)
+
+
+Started POST "/posts" for ::1 at 2016-07-11 23:47:27 +0700
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6XQFfl8E1B3ILIiWxIucoooJEk5zSghibTEDxP3QJsnpVd86QaLvZEVW4o2rEZvfdBZWN5Xlb0SuIciWjho2Tg==", "post"=>{"title"=>"Hello World!", "body"=>"on this day the first blog post of amazing blog is posted."}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "Hello World!"], ["body", "on this day the first blog post of amazing blog is posted."], ["created_at", "2016-07-11 16:47:27.313024"], ["updated_at", "2016-07-11 16:47:27.313024"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/1
+Completed 302 Found in 16ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/posts/1" for ::1 at 2016-07-11 23:47:27 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (1) LIMIT 1[0m
+  Rendered posts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 12.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/1" for ::1 at 2016-07-11 23:48:47 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE (1) LIMIT 1
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 23:48:47 +0700
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 23:48:47 +0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-11 23:48:47 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 23:48:47 +0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 23:48:47 +0700
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 23:48:47 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 23:48:47 +0700
+
+
+Started GET "/posts/1" for ::1 at 2016-07-11 23:49:42 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (1) LIMIT 1[0m
+  Rendered posts/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 23:49:42 +0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 23:49:42 +0700
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 23:49:42 +0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 23:49:42 +0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-11 23:49:42 +0700
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 23:49:42 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 23:49:42 +0700
+
+
+Started GET "/posts/1" for ::1 at 2016-07-11 23:54:02 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mPost Load (0.3ms)[0m  SELECT  "posts".* FROM "posts" WHERE (1) LIMIT 1
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 18ms (Views: 13.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 23:54:02 +0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-11 23:54:02 +0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 23:54:02 +0700
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 23:54:02 +0700
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 23:54:02 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 23:54:02 +0700
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 23:54:02 +0700
+
+
+Started GET "/" for ::1 at 2016-07-11 23:54:06 +0700
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"[0m
+  Rendered posts/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 21ms (Views: 19.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/new" for ::1 at 2016-07-11 23:54:13 +0700
+
+ActionController::RoutingError (No route matches [GET] "/new"):
+  actionpack (4.2.6) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.6) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.6) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.6) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.6) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.6) lib/action_dispatch/middleware/static.rb:120:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.6) lib/rails/engine.rb:518:in `call'
+  railties (4.2.6) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:140:in `service'
+  /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/httpserver.rb:96:in `run'
+  /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/2.3.0/webrick/server.rb:296:in `block in start_thread'
+
+
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.2ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_route.html.erb (1.0ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/routes/_table.html.erb (1.0ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.1ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (68.8ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (46.8ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (105.6ms)
+
+
+Started GET "/posts/new" for ::1 at 2016-07-11 23:54:20 +0700
+Processing by PostsController#new as HTML
+  Rendered posts/new.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 22ms (Views: 21.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2016-07-11 23:55:44 +0700
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LnVlul37bmuGkAkGQhxN+H1LSgm//IzfWI1uTbxZTtsuVL/+Q11VEgvqYx0thkqFg1QOcFlT6/mbnaUfz5NeXA==", "post"=>{"title"=>"second post", "body"=>"Dreamcatcher offal you probably haven't heard of them laboris humblebrag, ullamco nisi bicycle rights irure blog. VHS helvetica nesciunt food truck. Crucifix gochujang occupy next level, narwhal cold-pressed sartorial placeat labore do thundercats bicycle rights. Nihil hashtag actually vero, retro austin pickled umami. Brunch fugiat tacos affogato, dolore esse before they sold out. Adipisicing messenger bag tumblr sed in, hella narwhal. Pariatur flannel reprehenderit, intelligentsia magna health goth qui.\r\n\r\nEtsy chambray jean shorts tousled. Meh butcher knausgaard austin 3 wolf moon brunch. Leggings slow-carb schlitz meh, kombucha hashtag typewriter chia iPhone ennui reprehenderit XOXO velit. Schlitz fashion axe helvetica mollit ugh. Hoodie distillery heirloom, bespoke literally ugh master cleanse thundercats. Scenester shabby chic hammock trust fund. Direct trade ex photo booth, cornhole distillery PBR&B meh asymmetrical williamsburg do irony.\r\n\r\nDrinking vinegar mustache aesthetic lo-fi semiotics nisi next level kickstarter, intelligentsia freegan readymade shoreditch viral sed. Incididunt four loko pug, pour-over ennui waistcoat mumblecore nesciunt humblebrag flannel placeat bicycle rights letterpress trust fund occupy. Crucifix locavore fap, adipisicing voluptate art party kombucha esse squid gentrify knausgaard. Viral aute scenester lo-fi +1. Try-hard proident PBR&B brunch, health goth nisi pour-over lomo placeat ea narwhal jean shorts keffiyeh magna cupidatat. Literally ullamco four loko direct trade next level pork belly. Bespoke synth asymmetrical gluten-free polaroid.\r\n\r\nSquid qui helvetica affogato dolore gochujang. Veniam quinoa magna put a bird on it, culpa plaid laboris. Helvetica vinyl cillum, yr paleo ullamco pitchfork odio gentrify food truck. Intelligentsia green juice man bun aesthetic, in accusamus flannel drinking vinegar butcher veniam dolor vinyl thundercats lumbersexual. Fanny pack four dollar toast incididunt pickled. Sriracha lumbersexual waistcoat cupidatat yuccie, street art YOLO ullamco pabst. Before they sold out marfa commodo yuccie, wayfarers try-hard pickled tacos vice affogato."}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "second post"], ["body", "Dreamcatcher offal you probably haven't heard of them laboris humblebrag, ullamco nisi bicycle rights irure blog. VHS helvetica nesciunt food truck. Crucifix gochujang occupy next level, narwhal cold-pressed sartorial placeat labore do thundercats bicycle rights. Nihil hashtag actually vero, retro austin pickled umami. Brunch fugiat tacos affogato, dolore esse before they sold out. Adipisicing messenger bag tumblr sed in, hella narwhal. Pariatur flannel reprehenderit, intelligentsia magna health goth qui.\r\n\r\nEtsy chambray jean shorts tousled. Meh butcher knausgaard austin 3 wolf moon brunch. Leggings slow-carb schlitz meh, kombucha hashtag typewriter chia iPhone ennui reprehenderit XOXO velit. Schlitz fashion axe helvetica mollit ugh. Hoodie distillery heirloom, bespoke literally ugh master cleanse thundercats. Scenester shabby chic hammock trust fund. Direct trade ex photo booth, cornhole distillery PBR&B meh asymmetrical williamsburg do irony.\r\n\r\nDrinking vinegar mustache aesthetic lo-fi semiotics nisi next level kickstarter, intelligentsia freegan readymade shoreditch viral sed. Incididunt four loko pug, pour-over ennui waistcoat mumblecore nesciunt humblebrag flannel placeat bicycle rights letterpress trust fund occupy. Crucifix locavore fap, adipisicing voluptate art party kombucha esse squid gentrify knausgaard. Viral aute scenester lo-fi +1. Try-hard proident PBR&B brunch, health goth nisi pour-over lomo placeat ea narwhal jean shorts keffiyeh magna cupidatat. Literally ullamco four loko direct trade next level pork belly. Bespoke synth asymmetrical gluten-free polaroid.\r\n\r\nSquid qui helvetica affogato dolore gochujang. Veniam quinoa magna put a bird on it, culpa plaid laboris. Helvetica vinyl cillum, yr paleo ullamco pitchfork odio gentrify food truck. Intelligentsia green juice man bun aesthetic, in accusamus flannel drinking vinegar butcher veniam dolor vinyl thundercats lumbersexual. Fanny pack four dollar toast incididunt pickled. Sriracha lumbersexual waistcoat cupidatat yuccie, street art YOLO ullamco pabst. Before they sold out marfa commodo yuccie, wayfarers try-hard pickled tacos vice affogato."], ["created_at", "2016-07-11 16:55:44.743691"], ["updated_at", "2016-07-11 16:55:44.743691"]]
+  [1m[35m (0.7ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/2
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/2" for ::1 at 2016-07-11 23:55:44 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (2) LIMIT 1[0m
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 13ms (Views: 12.2ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/posts" for ::1 at 2016-07-11 23:55:52 +0700
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LnVlul37bmuGkAkGQhxN+H1LSgm//IzfWI1uTbxZTtsuVL/+Q11VEgvqYx0thkqFg1QOcFlT6/mbnaUfz5NeXA==", "post"=>{"title"=>"third post", "body"=>"Dreamcatcher offal you probably haven't heard of them laboris humblebrag, ullamco nisi bicycle rights irure blog. VHS helvetica nesciunt food truck. Crucifix gochujang occupy next level, narwhal cold-pressed sartorial placeat labore do thundercats bicycle rights. Nihil hashtag actually vero, retro austin pickled umami. Brunch fugiat tacos affogato, dolore esse before they sold out. Adipisicing messenger bag tumblr sed in, hella narwhal. Pariatur flannel reprehenderit, intelligentsia magna health goth qui.\r\n\r\nEtsy chambray jean shorts tousled. Meh butcher knausgaard austin 3 wolf moon brunch. Leggings slow-carb schlitz meh, kombucha hashtag typewriter chia iPhone ennui reprehenderit XOXO velit. Schlitz fashion axe helvetica mollit ugh. Hoodie distillery heirloom, bespoke literally ugh master cleanse thundercats. Scenester shabby chic hammock trust fund. Direct trade ex photo booth, cornhole distillery PBR&B meh asymmetrical williamsburg do irony.\r\n\r\nDrinking vinegar mustache aesthetic lo-fi semiotics nisi next level kickstarter, intelligentsia freegan readymade shoreditch viral sed. Incididunt four loko pug, pour-over ennui waistcoat mumblecore nesciunt humblebrag flannel placeat bicycle rights letterpress trust fund occupy. Crucifix locavore fap, adipisicing voluptate art party kombucha esse squid gentrify knausgaard. Viral aute scenester lo-fi +1. Try-hard proident PBR&B brunch, health goth nisi pour-over lomo placeat ea narwhal jean shorts keffiyeh magna cupidatat. Literally ullamco four loko direct trade next level pork belly. Bespoke synth asymmetrical gluten-free polaroid.\r\n\r\nSquid qui helvetica affogato dolore gochujang. Veniam quinoa magna put a bird on it, culpa plaid laboris. Helvetica vinyl cillum, yr paleo ullamco pitchfork odio gentrify food truck. Intelligentsia green juice man bun aesthetic, in accusamus flannel drinking vinegar butcher veniam dolor vinyl thundercats lumbersexual. Fanny pack four dollar toast incididunt pickled. Sriracha lumbersexual waistcoat cupidatat yuccie, street art YOLO ullamco pabst. Before they sold out marfa commodo yuccie, wayfarers try-hard pickled tacos vice affogato."}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "third post"], ["body", "Dreamcatcher offal you probably haven't heard of them laboris humblebrag, ullamco nisi bicycle rights irure blog. VHS helvetica nesciunt food truck. Crucifix gochujang occupy next level, narwhal cold-pressed sartorial placeat labore do thundercats bicycle rights. Nihil hashtag actually vero, retro austin pickled umami. Brunch fugiat tacos affogato, dolore esse before they sold out. Adipisicing messenger bag tumblr sed in, hella narwhal. Pariatur flannel reprehenderit, intelligentsia magna health goth qui.\r\n\r\nEtsy chambray jean shorts tousled. Meh butcher knausgaard austin 3 wolf moon brunch. Leggings slow-carb schlitz meh, kombucha hashtag typewriter chia iPhone ennui reprehenderit XOXO velit. Schlitz fashion axe helvetica mollit ugh. Hoodie distillery heirloom, bespoke literally ugh master cleanse thundercats. Scenester shabby chic hammock trust fund. Direct trade ex photo booth, cornhole distillery PBR&B meh asymmetrical williamsburg do irony.\r\n\r\nDrinking vinegar mustache aesthetic lo-fi semiotics nisi next level kickstarter, intelligentsia freegan readymade shoreditch viral sed. Incididunt four loko pug, pour-over ennui waistcoat mumblecore nesciunt humblebrag flannel placeat bicycle rights letterpress trust fund occupy. Crucifix locavore fap, adipisicing voluptate art party kombucha esse squid gentrify knausgaard. Viral aute scenester lo-fi +1. Try-hard proident PBR&B brunch, health goth nisi pour-over lomo placeat ea narwhal jean shorts keffiyeh magna cupidatat. Literally ullamco four loko direct trade next level pork belly. Bespoke synth asymmetrical gluten-free polaroid.\r\n\r\nSquid qui helvetica affogato dolore gochujang. Veniam quinoa magna put a bird on it, culpa plaid laboris. Helvetica vinyl cillum, yr paleo ullamco pitchfork odio gentrify food truck. Intelligentsia green juice man bun aesthetic, in accusamus flannel drinking vinegar butcher veniam dolor vinyl thundercats lumbersexual. Fanny pack four dollar toast incididunt pickled. Sriracha lumbersexual waistcoat cupidatat yuccie, street art YOLO ullamco pabst. Before they sold out marfa commodo yuccie, wayfarers try-hard pickled tacos vice affogato."], ["created_at", "2016-07-11 16:55:52.502364"], ["updated_at", "2016-07-11 16:55:52.502364"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/3" for ::1 at 2016-07-11 23:55:52 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (3) LIMIT 1[0m
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 10.8ms | ActiveRecord: 0.1ms)
+
+
+Started POST "/posts" for ::1 at 2016-07-11 23:56:03 +0700
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LnVlul37bmuGkAkGQhxN+H1LSgm//IzfWI1uTbxZTtsuVL/+Q11VEgvqYx0thkqFg1QOcFlT6/mbnaUfz5NeXA==", "post"=>{"title"=>"fourth post", "body"=>"Dreamcatcher offal you probably haven't heard of them laboris humblebrag, ullamco nisi bicycle rights irure blog. VHS helvetica nesciunt food truck. Crucifix gochujang occupy next level, narwhal cold-pressed sartorial placeat labore do thundercats bicycle rights. Nihil hashtag actually vero, retro austin pickled umami. Brunch fugiat tacos affogato, dolore esse before they sold out. Adipisicing messenger bag tumblr sed in, hella narwhal. Pariatur flannel reprehenderit, intelligentsia magna health goth qui.\r\n\r\nEtsy chambray jean shorts tousled. Meh butcher knausgaard austin 3 wolf moon brunch. Leggings slow-carb schlitz meh, kombucha hashtag typewriter chia iPhone ennui reprehenderit XOXO velit. Schlitz fashion axe helvetica mollit ugh. Hoodie distillery heirloom, bespoke literally ugh master cleanse thundercats. Scenester shabby chic hammock trust fund. Direct trade ex photo booth, cornhole distillery PBR&B meh asymmetrical williamsburg do irony.\r\n\r\nDrinking vinegar mustache aesthetic lo-fi semiotics nisi next level kickstarter, intelligentsia freegan readymade shoreditch viral sed. Incididunt four loko pug, pour-over ennui waistcoat mumblecore nesciunt humblebrag flannel placeat bicycle rights letterpress trust fund occupy. Crucifix locavore fap, adipisicing voluptate art party kombucha esse squid gentrify knausgaard. Viral aute scenester lo-fi +1. Try-hard proident PBR&B brunch, health goth nisi pour-over lomo placeat ea narwhal jean shorts keffiyeh magna cupidatat. Literally ullamco four loko direct trade next level pork belly. Bespoke synth asymmetrical gluten-free polaroid.\r\n\r\nSquid qui helvetica affogato dolore gochujang. Veniam quinoa magna put a bird on it, culpa plaid laboris. Helvetica vinyl cillum, yr paleo ullamco pitchfork odio gentrify food truck. Intelligentsia green juice man bun aesthetic, in accusamus flannel drinking vinegar butcher veniam dolor vinyl thundercats lumbersexual. Fanny pack four dollar toast incididunt pickled. Sriracha lumbersexual waistcoat cupidatat yuccie, street art YOLO ullamco pabst. Before they sold out marfa commodo yuccie, wayfarers try-hard pickled tacos vice affogato."}, "commit"=>"Create Post"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "fourth post"], ["body", "Dreamcatcher offal you probably haven't heard of them laboris humblebrag, ullamco nisi bicycle rights irure blog. VHS helvetica nesciunt food truck. Crucifix gochujang occupy next level, narwhal cold-pressed sartorial placeat labore do thundercats bicycle rights. Nihil hashtag actually vero, retro austin pickled umami. Brunch fugiat tacos affogato, dolore esse before they sold out. Adipisicing messenger bag tumblr sed in, hella narwhal. Pariatur flannel reprehenderit, intelligentsia magna health goth qui.\r\n\r\nEtsy chambray jean shorts tousled. Meh butcher knausgaard austin 3 wolf moon brunch. Leggings slow-carb schlitz meh, kombucha hashtag typewriter chia iPhone ennui reprehenderit XOXO velit. Schlitz fashion axe helvetica mollit ugh. Hoodie distillery heirloom, bespoke literally ugh master cleanse thundercats. Scenester shabby chic hammock trust fund. Direct trade ex photo booth, cornhole distillery PBR&B meh asymmetrical williamsburg do irony.\r\n\r\nDrinking vinegar mustache aesthetic lo-fi semiotics nisi next level kickstarter, intelligentsia freegan readymade shoreditch viral sed. Incididunt four loko pug, pour-over ennui waistcoat mumblecore nesciunt humblebrag flannel placeat bicycle rights letterpress trust fund occupy. Crucifix locavore fap, adipisicing voluptate art party kombucha esse squid gentrify knausgaard. Viral aute scenester lo-fi +1. Try-hard proident PBR&B brunch, health goth nisi pour-over lomo placeat ea narwhal jean shorts keffiyeh magna cupidatat. Literally ullamco four loko direct trade next level pork belly. Bespoke synth asymmetrical gluten-free polaroid.\r\n\r\nSquid qui helvetica affogato dolore gochujang. Veniam quinoa magna put a bird on it, culpa plaid laboris. Helvetica vinyl cillum, yr paleo ullamco pitchfork odio gentrify food truck. Intelligentsia green juice man bun aesthetic, in accusamus flannel drinking vinegar butcher veniam dolor vinyl thundercats lumbersexual. Fanny pack four dollar toast incididunt pickled. Sriracha lumbersexual waistcoat cupidatat yuccie, street art YOLO ullamco pabst. Before they sold out marfa commodo yuccie, wayfarers try-hard pickled tacos vice affogato."], ["created_at", "2016-07-11 16:56:03.902646"], ["updated_at", "2016-07-11 16:56:03.902646"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/4
+Completed 302 Found in 3ms (ActiveRecord: 0.9ms)
+
+
+Started GET "/posts/4" for ::1 at 2016-07-11 23:56:03 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (4) LIMIT 1[0m
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 12ms (Views: 10.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-07-11 23:56:17 +0700
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"
+  Rendered posts/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 11ms (Views: 10.6ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/2" for ::1 at 2016-07-11 23:56:23 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE (2) LIMIT 1[0m
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 17.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/2" for ::1 at 2016-07-11 23:56:49 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 25ms (Views: 14.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 23:56:49 +0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 23:56:49 +0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-11 23:56:49 +0700
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 23:56:49 +0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 23:56:49 +0700
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 23:56:49 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 23:56:49 +0700
+
+
+Started GET "/posts/2" for ::1 at 2016-07-11 23:59:08 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 19ms (Views: 12.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 23:59:08 +0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 23:59:08 +0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-11 23:59:08 +0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 23:59:08 +0700
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 23:59:08 +0700
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 23:59:08 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 23:59:08 +0700
+
+
+Started GET "/" for ::1 at 2016-07-11 23:59:09 +0700
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (1.7ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (16.8ms)
+Completed 200 OK in 161ms (Views: 148.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2016-07-11 23:59:19 +0700
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 16ms (Views: 15.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-11 23:59:20 +0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-11 23:59:20 +0700
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-11 23:59:20 +0700
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-11 23:59:20 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-11 23:59:20 +0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-11 23:59:20 +0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-11 23:59:20 +0700
+
+
+Started GET "/posts/3" for ::1 at 2016-07-12 00:06:46 +0700
+
+SyntaxError (/Users/nahwinrajan/workspace/blog-practice/app/controllers/posts_controller.rb:45: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/posts_controller.rb:45: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.8ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.8ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.1ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.4ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.2ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (44.5ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (100.4ms)
+
+
+Started GET "/posts/3" for ::1 at 2016-07-12 00:08:16 +0700
+
+SyntaxError (/Users/nahwinrajan/workspace/blog-practice/app/controllers/posts_controller.rb:44: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/posts_controller.rb:44: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (4.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (1.7ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (1.0ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (52.7ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.4ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (111.8ms)
+
+
+Started GET "/posts/3" for ::1 at 2016-07-12 00:08:38 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 17ms (Views: 12.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-12 00:08:38 +0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-12 00:08:38 +0700
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-12 00:08:38 +0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-12 00:08:38 +0700
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-12 00:08:38 +0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-12 00:08:38 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-12 00:08:38 +0700
+
+
+Started GET "/" for ::1 at 2016-07-12 00:08:40 +0700
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (1.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 107ms (Views: 94.5ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/2" for ::1 at 2016-07-12 00:12:17 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.4ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/posts/2" for ::1 at 2016-07-12 00:12:21 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 21ms (Views: 19.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/2/edit" for ::1 at 2016-07-12 00:12:36 +0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 2]]
+  Rendered posts/_form.html.erb (1.9ms)
+  Rendered posts/edit.html.erb within layouts/application (3.2ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/3/edit" for ::1 at 2016-07-12 00:12:57 +0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered posts/_form.html.erb (1.4ms)
+  Rendered posts/edit.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/posts/3" for ::1 at 2016-07-12 00:13:04 +0700
+Processing by PostsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"PZHN9x/LG40xBoqU2M9ox0hi+Mi6pTWJeoLZyJsvZT89sBezAW0g9Lx84I+3VW+6tn28sVwKUq+5khKa6OV1uA==", "post"=>{"title"=>"third post (updated)", "body"=>"Dreamcatcher offal you probably haven't heard of them laboris humblebrag, ullamco nisi bicycle rights irure blog. VHS helvetica nesciunt food truck. Crucifix gochujang occupy next level, narwhal cold-pressed sartorial placeat labore do thundercats bicycle rights. Nihil hashtag actually vero, retro austin pickled umami. Brunch fugiat tacos affogato, dolore esse before they sold out. Adipisicing messenger bag tumblr sed in, hella narwhal. Pariatur flannel reprehenderit, intelligentsia magna health goth qui.\r\n\r\nEtsy chambray jean shorts tousled. Meh butcher knausgaard austin 3 wolf moon brunch. Leggings slow-carb schlitz meh, kombucha hashtag typewriter chia iPhone ennui reprehenderit XOXO velit. Schlitz fashion axe helvetica mollit ugh. Hoodie distillery heirloom, bespoke literally ugh master cleanse thundercats. Scenester shabby chic hammock trust fund. Direct trade ex photo booth, cornhole distillery PBR&B meh asymmetrical williamsburg do irony.\r\n\r\nDrinking vinegar mustache aesthetic lo-fi semiotics nisi next level kickstarter, intelligentsia freegan readymade shoreditch viral sed. Incididunt four loko pug, pour-over ennui waistcoat mumblecore nesciunt humblebrag flannel placeat bicycle rights letterpress trust fund occupy. Crucifix locavore fap, adipisicing voluptate art party kombucha esse squid gentrify knausgaard. Viral aute scenester lo-fi +1. Try-hard proident PBR&B brunch, health goth nisi pour-over lomo placeat ea narwhal jean shorts keffiyeh magna cupidatat. Literally ullamco four loko direct trade next level pork belly. Bespoke synth asymmetrical gluten-free polaroid.\r\n\r\nSquid qui helvetica affogato dolore gochujang. Veniam quinoa magna put a bird on it, culpa plaid laboris. Helvetica vinyl cillum, yr paleo ullamco pitchfork odio gentrify food truck. Intelligentsia green juice man bun aesthetic, in accusamus flannel drinking vinegar butcher veniam dolor vinyl thundercats lumbersexual. Fanny pack four dollar toast incididunt pickled. Sriracha lumbersexual waistcoat cupidatat yuccie, street art YOLO ullamco pabst. Before they sold out marfa commodo yuccie, wayfarers try-hard pickled tacos vice affogato."}, "commit"=>"Update Post", "id"=>"3"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  [1m[36m (0.0ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.2ms)[0m  UPDATE "posts" SET "title" = ?, "updated_at" = ? WHERE "posts"."id" = ?  [["title", "third post (updated)"], ["updated_at", "2016-07-11 17:13:04.546999"], ["id", 3]]
+  [1m[36m (0.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/3
+Completed 302 Found in 4ms (ActiveRecord: 1.0ms)
+
+
+Started GET "/posts/3" for ::1 at 2016-07-12 00:13:04 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 13ms (Views: 11.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/posts/3" for ::1 at 2016-07-12 00:14:58 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-12 00:14:59 +0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-12 00:14:59 +0700
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-12 00:14:59 +0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-12 00:14:59 +0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-12 00:14:59 +0700
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-12 00:14:59 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-12 00:14:59 +0700
+
+
+Started GET "/posts/3/edit" for ::1 at 2016-07-12 00:15:00 +0700
+Processing by PostsController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered posts/_form.html.erb (2.2ms)
+  Rendered posts/edit.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 52ms (Views: 50.4ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/posts/3" for ::1 at 2016-07-12 00:19:20 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (0.8ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.5ms)
+
+SyntaxError (/Users/nahwinrajan/workspace/blog-practice/app/views/posts/show.html.erb:7: syntax error, unexpected '\n', expecting =>):
+  app/views/posts/show.html.erb:7: syntax error, unexpected '\n', expecting =>
+
+
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_source.erb (7.8ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (2.9ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (0.9ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/actionpack-4.2.6/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (64.5ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.3ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.4ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (49.0ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.2ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.5ms)
+  Rendered /Users/nahwinrajan/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (119.6ms)
+
+
+Started GET "/posts/3" for ::1 at 2016-07-12 00:19:54 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mPost Load (0.1ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 3]]
+  Rendered posts/show.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-12 00:19:54 +0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-12 00:19:54 +0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-12 00:19:54 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-12 00:19:54 +0700
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-12 00:19:54 +0700
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-12 00:19:54 +0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-12 00:19:54 +0700
+
+
+Started DELETE "/posts/3" for ::1 at 2016-07-12 00:20:03 +0700
+Processing by PostsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"iMTssbNZsHhp72yVkIGA9nJ9D4csdrz3n5yGk24aLiuI5Tb1rf+LAeSVBo7/G4eLjGJL/srZ29FcjE3BHdA+rA==", "id"=>"3"}
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 3]]
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.3ms)[0m  [1mDELETE FROM "posts" WHERE "posts"."id" = ?[0m  [["id", 3]]
+  [1m[35m (1.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 4ms (ActiveRecord: 1.7ms)
+
+
+Started GET "/" for ::1 at 2016-07-12 00:20:03 +0700
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.1ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 16ms (Views: 13.8ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for ::1 at 2016-07-12 00:22:38 +0700
+Processing by PostsController#index as HTML
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY created_at DESC
+  Rendered posts/index.html.erb within layouts/application (1.1ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for ::1 at 2016-07-12 00:22:38 +0700
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-07-12 00:22:38 +0700
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-07-12 00:22:38 +0700
+
+
+Started GET "/assets/turbolinks.self-c5acd7a204f5f25ce7a1d8a0e4d92e28d34c9e2df2c7371cd7af88e147e4ad82.js?body=1" for ::1 at 2016-07-12 00:22:38 +0700
+
+
+Started GET "/assets/posts.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-07-12 00:22:38 +0700
+
+
+Started GET "/assets/posts.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-07-12 00:22:38 +0700
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-07-12 00:22:38 +0700
+
+
+Started GET "/posts/new" for ::1 at 2016-07-12 00:22:39 +0700
+Processing by PostsController#new as HTML
+  Rendered posts/_form.html.erb (3.1ms)
+  Rendered posts/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 32ms (Views: 29.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/posts" for ::1 at 2016-07-12 00:22:47 +0700
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"fyr1d3YDeT5H4/oJ/6myx3w+jmhYYwplSDjQLBBwIg1/Cy8zaKVCR8qZkBKQM7W6giHKEb7MbUOLKBt+Y7oyig==", "post"=>{"title"=>"new post", "body"=>"nsafl;kndgas,m vsanvo"}, "commit"=>"Create Post"}
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "posts" ("title", "body", "created_at", "updated_at") VALUES (?, ?, ?, ?)  [["title", "new post"], ["body", "nsafl;kndgas,m vsanvo"], ["created_at", "2016-07-11 17:22:47.821441"], ["updated_at", "2016-07-11 17:22:47.821441"]]
+  [1m[36m (1.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/posts/5
+Completed 302 Found in 6ms (ActiveRecord: 2.0ms)
+
+
+Started GET "/posts/5" for ::1 at 2016-07-12 00:22:47 +0700
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[35mPost Load (0.2ms)[0m  SELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1  [["id", 5]]
+  Rendered posts/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 23.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for ::1 at 2016-07-12 00:22:50 +0700
+Processing by PostsController#index as HTML
+  [1m[36mPost Load (0.3ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY created_at DESC[0m
+  Rendered posts/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 62ms (Views: 61.4ms | ActiveRecord: 0.3ms)
